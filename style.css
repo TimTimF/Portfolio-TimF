@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Stick No Bills', sans-serif;
+    letter-spacing: 3px;
+}
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+}
+
+.nav div {
+    padding: 2px 50px;
+}
+
+.button-1 {
+    border: 2px solid rgb(0, 255, 85, .5);
+    border-radius: 30px;
+    margin: 20px;
+    transition: background-color 300ms ease-out;
+}
+
+.button-1:hover {
+    background-color: rgb(0, 255, 85, .3);
+}
+
+.button-2 {
+    border: 2px solid rgb(255, 17, 0, .5);
+    border-radius: 30px;
+    margin: 20px;
+    transition: background-color 300ms ease-out;
+}
+
+.button-2:hover {
+    background-color: rgb(255, 17, 0, .3);
+}
+    
+.button-3 {
+    border: 2px solid rgb(0, 26, 255, .5);
+    border-radius: 30px;
+    margin: 20px;
+    transition: background-color 300ms ease-out;
+}
+
+.button-3:hover {
+    background-color: rgb(0, 26, 255, .3);
+}
+
+#header-name {
+    color: rgb(255, 255, 255);
+    margin-right: 20%;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+/* Header done */
+
+/* LANDING PAGE */
+
+.wrapper {
+    background: rgb(154,170,255);
+    background: radial-gradient(circle, rgba(154,170,255,1) 0%, rgba(85,94,255,1) 16%, rgba(0,0,0,1) 74%);
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 15px double rgb(255, 255, 255, .8);
+}
+
+.box-animation div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(255, 255, 255, .5);
+    background-color: transparent;
+}
+
+.box-animation div:nth-child(1){
+    top: 12em;
+    left: 20em;
+    animation: bg-animation 3s linear infinite;
+}
+
+.box-animation div:nth-child(2){
+    top: 20em;
+    left: 10em;
+    animation: bg-animation 8s linear infinite;
+    border-color: rgba(32, 180, 32, .8);
+}
+
+.box-animation div:nth-child(3){
+    top:10em;
+    left: 70em;
+    animation: bg-animation 5s linear infinite;
+    border-color: rgb(255, 255, 0, .8);
+}
+
+.box-animation div:nth-child(4){
+    top:40em;
+    left: 40em;
+    animation: bg-animation 1s linear infinite;
+}
+
+.box-animation div:nth-child(5){
+    top:40em;
+    left: 5em;
+    animation: bg-animation 12s linear infinite;
+    border-color: rgb(250, 128, 114, .8);
+}
+
+.box-animation div:nth-child(6){
+    top:15em;
+    left: 50em;
+    animation: bg-animation 3s linear infinite;
+    border-color: rgb(238, 130, 238, .8);
+}
+
+.box-animation div:nth-child(7){
+        top:30em;
+        left: 50em;
+        animation: bg-animation 4s linear infinite;
+}
+
+.box-animation div:nth-child(8){
+    top:28em;
+    left: 1em;
+    animation: bg-animation 9s linear infinite;
+    border-color: rgb(64, 224, 208, .8);
+}
+
+.box-animation div:nth-child(9){
+    top:35em;
+    left: 65em;
+    animation: bg-animation 4s linear infinite;
+}
+
+.box-animation div:nth-child(10){
+    top:30em;
+    left: 30em;
+    animation: bg-animation 5s linear infinite;
+    border-color: rgb(255, 0, 0, .8);
+}
+
+@keyframes bg-animation {
+    0% {transform: scale(0) translateX(0) translateY(0) rotate(50deg);
+        opacity: .6;}
+    50% {opacity: 1;}
+    100% {transform: scale(1.5) translateX(500px) translateY(-250px) rotate(360deg);
+    opacity: 0;}
+}
+
+/* bg animation done */
+
+.content {
+    color: rgba(255, 255, 255, .8);
+    text-shadow: 2px 2px 4px #000000
+}
+
+.content a {
+    text-decoration: none;
+    font-size: larger;
+    color: rgba(255, 255, 255, .8);
+}
+.button-4 {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms ease-in-out, transform 300ms ease-out;
+}
+
+.button-4 div {
+    border-bottom: 5px solid rgb(255, 255, 255, .8);
+    border-left: 5px solid rgb(255, 255, 255, .8);
+    height: 10px;
+    width: 10px;
+    margin-left: 20px;
+    transform: rotate(-135deg);
+    transition: transform 300ms;
+}
+
+.button-4:hover {
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.wrapper-2 {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: auto;
+    border-bottom: 15px double rgb(255, 255, 255, .8);
+}
+
+.card-container {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 1450px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 5px solid rgb(255, 255, 255, .8); /* take off border */
+}
+
+.card-1 {  
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: background-color 200ms linear, opacity 200ms linear;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.circle1 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255, .8);
+    transition: background-color 200ms linear, opacity 200ms linear;
+}
+
+.card-2 {
+    border-right: 5px double white;
+    border-left: 5px double white;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    transition: background-color 200ms linear, opacity 200ms linear;
+    text-decoration: none;
+}
+
+.circle2 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255, .8);
+    transition: background-color 200ms linear, opacity 200ms linear;
+}
+
+.card-3 {   
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: background-color 200ms linear, opacity 200ms linear;
+    text-decoration: none;
+}
+
+.circle3 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255, .8);
+    transition: background-color 200ms linear, opacity 200ms linear;
+}
+
+.skillDescription1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 33%;
+    opacity: 0;
+    transition: opacity 1s linear 500ms;
+    border-right: 5px double rgb(0, 0, 0); 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.skillDescription1 p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skillDescription1 h2 {
+    font-size: 40px;
+}
+
+.skillDescription2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 33%;
+    opacity: 0;
+    transition: opacity 1s linear 500ms;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.skillDescription2 p {
+    font-size:30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skillDescription2 h2 {
+    font-size: 40px;
+}
+
+.skillDescription3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 33%;
+    opacity: 0;
+    transition: opacity 1s linear 500ms;
+    border-left: 5px double rgb(0, 0, 0);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.skillDescription3 p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skillDescription3 h2 {
+    font-size: 40px;
+}
+
+.circle-InnerLogo1 {
+    background-image: url("images/book.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.circle-InnerLogo2 {
+    background-image: url("images/lightbulb.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.circle-InnerLogo3 {
+    background-image: url("images/lightning.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+
+.hide {
+    opacity: 0;
+}
+/* Skillset buttons done */
+
+.wrapper-3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(80,107,255,1) 100%);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255, .8);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.projectContainer {
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 5px solid white;
+}
+
+.project1 {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    background-image: url("images/project1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.project2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/project2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.project3 {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background-image: url("images/project3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.project1:hover, .project2:hover, .project3:hover {
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: multiply;
+    font-size: 30px;
+}
+
+.projectTitle {
+    color: white;
+    opacity: 1;
+    text-shadow: 2px 2px 4px #000000;
+    transition: transform 200ms ease-out;
+    text-align: center;
+}
+
+.languageLogoContainer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(51, 51, 51);
+    transition: opacity 150ms linear;
+}
+
+.htmlLogo {
+    background-image: url("images/htmlLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+.cssLogo{
+    background-image: url("images/cssLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+.jsLogo{
+    background-image: url("images/jsLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+.reactLogo {
+    background-image: url("images/reactLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+/* ABOUT ME PAGE */
+.aboutMe-Wrapper {
+    background-image: url("images/AboutMeBG.jpg");
+    background-blend-mode: screen;
+    background-color: rgba(222, 184, 135, 0.6);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutMe-PhotoContainer {
+    border: 5px solid black;
+    height: 80%;
+    min-width: 490px;
+    border-radius: 30px;
+    background-image: url("images/aboutmePhoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100);
+}
+
+.AboutMe-SummaryContainer {
+    background-color: rgb(17, 17, 17);
+    width: 50%;
+    height: 70%;
+    border-radius: 30px;
+    border: 5px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    flex-wrap: nowrap;
+    overflow:auto;
+}
+
+.AboutMe-SummaryContainer > p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* FOOTER */
+.footerWrapper {
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactContainer {
+    border-radius: 30px;
+    padding: 15px;
+}
